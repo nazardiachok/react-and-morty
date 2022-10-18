@@ -1,3 +1,28 @@
+import styled from "styled-components";
+export default function NavList() {
+  return (
+    <Navbar>
+      {/*  <NavbarLink></NavbarLink> */}
+      <div>Home</div>
+      <div>Bookmark</div>
+      <div>Profil</div>
+    </Navbar>
+  );
+}
+
+const Navbar = styled.div`
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  border-top: 1px solid black;
+  z-index: 5;
+  background-color: azure;
+`;
+
 /* import { NavLink } from "react-router-dom";
 export default function NavbarLink() {
   return (

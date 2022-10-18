@@ -1,5 +1,6 @@
 import Header from "./header/header";
-/* import "/App.css"; */
+import Main from "./main/main";
+import NavList from "./footer/navbar";
 
 function App() {
   return (
@@ -8,36 +9,11 @@ function App() {
         <Header></Header>
       </haeder>
       <main style={{ display: "flex", justifyContent: "center" }}>
-        <figure>
-          <img
-            src="https://rickandmortyapi.com/api/character/avatar/2.jpeg"
-            alt=""
-          />
-          <figcaption>Morty Smith</figcaption>
-        </figure>
-        <figure>
-          <img
-            src="https://rickandmortyapi.com/api/character/avatar/2.jpeg"
-            alt=""
-          />
-          <figcaption>Morty Smith</figcaption>
-        </figure>
+        <Main></Main>
       </main>
-      <footer
-        className="footer"
-        style={{
-          position: "fixed",
-          bottom: 0,
-          width: "100%",
-          display: "flex",
-          justifyContent: "space-around",
-        }}
-      >
-        {/*  <NavbarLink></NavbarLink> */}
-        <div>Home</div>
-        <div>Bookmark</div>
-        <div>Profil</div>
-      </footer>
+      <div>
+        <NavList></NavList>
+      </div>
     </div>
   );
 }
